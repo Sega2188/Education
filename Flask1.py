@@ -9,13 +9,13 @@ def home(user1):
 
 
 @app.route('/summa/<x>/<y>')
-def home2(x, y):
+def summa(x, y):
     result = int(x) + int(y)
     return str(result)
 
 
 @app.route('/long/<str1>/<str2>/<str3>')
-def home3(str1, str2, str3):
+def long_string(str1, str2, str3):
     maxlen = len(str1)
     result = str1
     if len(str2) > maxlen:
